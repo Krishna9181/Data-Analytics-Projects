@@ -51,6 +51,7 @@ and cd.date = cv.date
 where cd.continent is not null
 order by 2,3,4
 
+-- Using CTE
 -- Displaying Percentage of Total People Vaccinated as the time Progress
 With people_vaccinated (date, continent, location, population, new_vaacinations_smoothed, Total_Vaccinations) 
 as 
@@ -67,7 +68,7 @@ select *, (Total_Vaccinations/population)*100 as Percentage_Vaccinated
 from people_vaccinated;
 
 
--- Creating Views people_vaccinated
+-- Creating Views for people_vaccinated
 CREATE VIEW people_vaccinated
 as
 select cd.date, cd.continent, cd.location, cd.population, cv.new_vaccinations_smoothed,
@@ -77,6 +78,5 @@ join CovidVaccinations cv
 on cd.location = cv.location
 and cd.date = cv.date
 where cd.continent is not null;
-
 
 select * from people_vaccinated;
