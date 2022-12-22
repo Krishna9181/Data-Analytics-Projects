@@ -5,5 +5,3 @@ This repository holds all of the code and queries from the Portfolio Projects I 
 3. Customer Analysis - Tableau Visualization (http://tiny.cc/saikrishna_tableau_viz)
 4. Bike Sales Analysis Dashboard - Excel
 
-
-https://public.tableau.com/app/profile/sai.krishna.reddy6020/viz/CustomerAnalysis_16702860124780/Dashboard1
