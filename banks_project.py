@@ -27,7 +27,7 @@ def extract(url, table_attribs):
     for row in rows:
         if row.find('td') is not None:
             col = row.find_all('td')
-            data_dict = {'Name' : col[1].find_all('a')[1]['title'], 'MC_USD_Billion': col[2].contents[0]}
+            data_dict = {'Name' : col[1].find_all('a')[1]['title'], 'MC_USD_Billion': col[2].contents[0][:-1}
             df1 = pd.DataFrame(data_dict, index = [0])
             df = pd.concat([df,df1], ignore_index = True)
     return df
