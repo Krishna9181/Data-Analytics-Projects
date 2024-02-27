@@ -6,6 +6,3 @@ This repository holds all of the code and queries from the Portfolio Projects I 
 4. Bike Sales Analysis Dashboard - Excel
 5. Movies Analysis using Python
 
-# Data Engineer Projects
-1. Acquiring and Processing Information on the World's Largest Banks - ETL Application
-
