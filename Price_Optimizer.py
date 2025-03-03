@@ -19,6 +19,8 @@ df = pd.read_csv("data.csv", encoding = "utf-8")
 
 df['date'] = pd.to_datetime(df['date'], format='%d-%m-%Y', errors='coerce')
 df['month'] = df['date'].dt.month
+#df['month'] = df['month'].astype('category')
+
 df['cost'] = df['cost']*0.01
 
 df.drop_duplicates(inplace=True)
