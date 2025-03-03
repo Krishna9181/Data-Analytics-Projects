@@ -28,7 +28,6 @@ df[['date', 'time']] = df['InvoiceDate'].str.split(' ', expand=True)
 
 
 # Top 10 recommended products for a given item
-
 basket = df.groupby(['InvoiceNo', 'StockCode'])['Quantity'].sum().unstack().reset_index().fillna(0).set_index('InvoiceNo')
 basket.head(10)
 
