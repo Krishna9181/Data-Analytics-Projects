@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 
 df = pd.read_csv("OnlineRetail.csv")
 
-
+# New Method
 
 df.dropna(inplace=True)
 
