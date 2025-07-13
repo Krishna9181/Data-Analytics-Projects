@@ -7,6 +7,7 @@ add SaleDateUpdated Date;
 update NashvilleHousing
 set NashvilleHousing.SaleDateUpdated = convert(Date, SaleDate);
 
+-- Just adding a comment
 select *
 from NashvilleHousing;
 
